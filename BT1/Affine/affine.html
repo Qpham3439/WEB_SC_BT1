@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mã Hóa Affine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Mã Hóa Affine</h2>
+    <label>Văn bản:</label>
+    <textarea id="affineText"></textarea>
+
+    <label>a:</label>
+    <input type="number" id="affineA" value="5">
+
+    <label>b:</label>
+    <input type="number" id="affineB" value="8">
+
+    <button onclick="affineEncrypt()">Mã hoá</button>
+    <button onclick="affineDecrypt()">Giải mã</button>
+
+    <div class="output" id="affineResult"></div>
+  </section>
+
+  <script src="affine.js"></script>
+</body>
+</html>

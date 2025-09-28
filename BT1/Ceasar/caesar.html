@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mã Hóa Ceasar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Mã Hóa Ceasar</h2>
+
+    <label>Văn bản:</label>
+    <textarea id="caesarText" placeholder="Nhập văn bản..."></textarea>
+
+    <label>Khóa (shift):</label>
+    <input type="number" id="caesarKey" value="3">
+
+    <div class="controls">
+      <button onclick="caesarEncrypt()">Mã hoá</button>
+      <button onclick="caesarDecrypt()">Giải mã</button>
+      <button onclick="caesarClear()">Xóa</button>
+    </div>
+
+    <div class="output" id="caesarResult"></div>
+  </section>
+
+  <script src="caesar.js"></script>
+</body>
+</html>

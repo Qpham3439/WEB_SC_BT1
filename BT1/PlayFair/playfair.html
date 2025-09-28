@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Playfair Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Playfair Cipher</h2>
+    <label>Văn bản:</label>
+    <textarea id="playText"></textarea>
+
+    <label>Khóa:</label>
+    <input type="text" id="playKey" value="MONARCHY">
+
+    <button onclick="playEncrypt()">Mã hoá</button>
+    <button onclick="playDecrypt()">Giải mã</button>
+
+    <div class="output" id="playResult"></div>
+  </section>
+  <script src="playfair.js"></script>
+</body>
+</html>

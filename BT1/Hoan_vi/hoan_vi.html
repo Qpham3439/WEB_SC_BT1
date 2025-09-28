@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mã Hóa Hoán Vị</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Mã Hóa Hoán Vị</h2>
+    <label>Văn bản:</label>
+    <textarea id="permText"></textarea>
+
+    <label>Khóa (ví dụ: 3,1,2):</label>
+    <input type="text" id="permKey" value="3,1,2">
+
+    <button onclick="permEncrypt()">Mã hoá</button>
+    <button onclick="permDecrypt()">Giải mã</button>
+
+    <div class="output" id="permResult"></div>
+  </section>
+  <script src="hoan_vi.js"></script>
+</body>
+</html>
